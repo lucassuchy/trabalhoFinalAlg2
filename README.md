@@ -4,3 +4,6 @@
 - Sera feito um crud utilizando PHP para alimentar um banco em que ficara guardado as informações relativas aos documentos.
 - A pagina final mostrara os documentos de forma ordenada, mantendo o documento por tempo determinado.
 
+## 18/11
+- Subi alguns arquivos inicias do CRUD, precisando fazer mais algumas alterações
+- Subi o que foi exportado do banco que eu criei.
