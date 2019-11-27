@@ -32,7 +32,7 @@ class Conecta {
         if(link){
             $resultado = mysqli_query($link, $sql);
             self::fecha($link);
-            return $result;
+            return $resultado;
         }else{
             return NULL;
         }

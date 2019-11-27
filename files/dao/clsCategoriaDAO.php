@@ -4,13 +4,16 @@
      * anteriormente eu tinha um metodo post, não inclui aqui.
      * Preciso confirmar com o professor isso.
      */
-    include "clsConecta.php";
+    require_once "clsConecta.php";
+    require_once "model/clsCategoria.php";
 
-
-    Class Categoria {
-        public static function inserir( $categoria){
+    Class daoCategoria extends Categoria 
+    {
+        public static function inserir( $categoria)
+        {
             $sql = "INSERT INTO categorias(nome) VALUES('$nome')";
-            conecta::executa($sql);
+            Conecta::executa($sql);
         }
+    
     }
 ?>
