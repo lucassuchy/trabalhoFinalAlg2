@@ -19,7 +19,7 @@ class Conecta {
 
     private static function executa( $sql ){
         //Chama a função que abre a conexão com o banco
-        $link = self::abrir();
+        $link = self::abre();
         if ($link ){
             //Aqui o if verifica se a conexão ta funcionando, acredito eu
             mysqli_query($link, $sql);
@@ -28,7 +28,7 @@ class Conecta {
     } 
     
     private static function consulta( $sql) {
-        $link = self::abrir();
+        $link = self::abre();
         if(link){
             $resultado = mysqli_query($link, $sql);
             self::fecha($link);

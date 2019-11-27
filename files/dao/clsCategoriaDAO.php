@@ -10,7 +10,7 @@
     Class Categoria {
         public static function inserir( $categoria){
             $sql = "INSERT INTO categorias(nome) VALUES('$nome')";
-            Conecta::executa($sql);
+            conecta::executa($sql);
         }
     }
 ?>
