@@ -7,3 +7,8 @@
 ## 18/11
 - Subi alguns arquivos inicias do CRUD, precisando fazer mais algumas alterações
 - Subi o que foi exportado do banco que eu criei.
+
+## 27/11 
+- Iniciei as alterações no formato que os arquivos conversam
+- Elaborei funções para chamar determinadas ações.
+- Comecei pela inserir categorias.
