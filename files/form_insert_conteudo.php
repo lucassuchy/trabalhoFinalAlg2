@@ -10,8 +10,8 @@ $sql = mysqli_query($link, "SELECT * from categorias");
     <!-- Aqui ele começa a entender o formulario de envio -->
     <form action="inserir_conteudo.php" method="POST">
         <!-- Aqui é o segundo formulario de envio-->
-        <form name="categoria" method="post" action="">
-        <select>            
+       <!-- <form name="categoria" method="post" action=""> -->
+        <select name="categoria">            
             <option>Selecione... </option>
             <?php while($lista = mysqli_fetch_array($sql)) { ?>
             <!-- O while do php aqui vai adicionando e preenchendo o option value até que chegue no ultimo id -->

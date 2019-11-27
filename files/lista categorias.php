@@ -1,5 +1,7 @@
 <?PHP 
 // Conecta com o banco e lista em um menu todas as opções de categorias para inserir.
+// https://github.com/assparremberger/UC12_M171_Market
+
 include "conecta.php";
 $sql = mysqli_query($link, "SELECT * from categorias");
 ?>
