@@ -1,15 +1,26 @@
 <?php
 // arquivo utilizado para conectar com o banco Mural.
-
 class Conecta {
-    private static function abre(){
-        //Abre a conexão com o banco
+    public static function executa( $sql ){
+        // arquivo utilizado para conectar com o banco Mural.
         $host = "localhost";
         $user = "root";
         $pass = "";
         $db = "mural";
 
         $link = mysqli_connect($host, $user, $pass, $db);
+        mysqli_query($link, $sql);
+
+    }
+}
+/*    private static function abre(){
+        //Abre a conexão com o banco
+        $host = "localhost";
+        $user = "root";
+        $pass = "";
+        $db = "mural";
+        
+        $link = mysqli_connect($host, $user, $pass, $db) or die("Erro conectar");
     }
 
     private static function fecha( $link){
@@ -20,12 +31,14 @@ class Conecta {
     private static function executa( $sql ){
         //Chama a função que abre a conexão com o banco
         $link = self::abre();
-        if ($link ){
+        //if ($link ){
             //Aqui o if verifica se a conexão ta funcionando, acredito eu
             mysqli_query($link, $sql);
-            self:: fechar($link);
+       //     self:: fechar($link);
+        //}else{
+           // echo "<script> alert('".mysqli_connect_error()."');</script>";
+        //   echo "aaaa";
         }
-    } 
     
     private static function consulta( $sql) {
         $link = self::abre();
@@ -38,4 +51,6 @@ class Conecta {
         }
     }
 }
+
+*/
 ?>

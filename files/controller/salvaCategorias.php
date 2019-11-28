@@ -1,14 +1,13 @@
 <?php
 include_once '../model/clsCategoria.php';
 include_once '../dao/clsCategoriaDAO.php';
-include_once '../dao/clsConectar.php';
+include_once '../dao/clsConecta.php';
 
 if( isset( $_REQUEST['inserir'] ) ){
     $categoria = new Categoria();
     $categoria->setNome( $_POST['txtNome']  );
-    
-    Categoria::inserir($categoria);
-    
-    //header("Location: ../categorias.php");
+    daoCategoria::inserir($categoria);
+    header("Location: ../index.php");
 }
+
 
