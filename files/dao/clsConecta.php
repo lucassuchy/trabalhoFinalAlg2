@@ -12,8 +12,8 @@ class Conecta {
         mysqli_query($link, $sql);
 
     }
-}
-/*    private static function abre(){
+}/*
+    private static function abre(){
         //Abre a conexão com o banco
         $host = "localhost";
         $user = "root";
@@ -39,9 +39,9 @@ class Conecta {
            // echo "<script> alert('".mysqli_connect_error()."');</script>";
         //   echo "aaaa";
         }
-    
+
     private static function consulta( $sql) {
-        $link = self::abre();
+        $link = self->abre();
         if(link){
             $resultado = mysqli_query($link, $sql);
             self::fecha($link);
@@ -50,7 +50,7 @@ class Conecta {
             return NULL;
         }
     }
-}
+}*/
 
-*/
+
 ?>

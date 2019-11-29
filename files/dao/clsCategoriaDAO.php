@@ -6,7 +6,7 @@
      */
 
 
-    Class daoCategoria {
+    Class daoCategoria extends crud{
         public static function inserir( $categoria){
             $sql = "INSERT INTO categorias(nome) VALUES ". " ( '".$categoria->getNome()."' ) ";
             Conecta::executa($sql);

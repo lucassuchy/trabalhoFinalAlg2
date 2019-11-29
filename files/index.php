@@ -1,11 +1,5 @@
 <?php
-/**
- * Esses includes eu coloquei aqui para poder testar a conexão pelo xampp rapidinho.
- */
-    require_once ('dao/clsConecta.php');
-    require_once ('dao/clsCategoriaDAO.php');
-    require_once ('model/clsCategoria.php');
-
+    require_once "config.php";
 ?>
 
 <html>

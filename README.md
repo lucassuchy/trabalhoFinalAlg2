@@ -12,3 +12,8 @@
 - Iniciei as alterações no formato que os arquivos conversam
 - Elaborei funções para chamar determinadas ações.
 - Comecei pela inserir categorias.
+
+## 29/11
+ - O cadastro de categorias ta funcionando, inserindo no banco sem problemas.
+ - Preciso arrumar a função de conexão com o banco, pra fazer alterações
+ 
