@@ -30,7 +30,7 @@ class Crud
 
             if(!empty($dados)){
                 $query .= " where ";
-                foreach($where as $key => $value)
+                foreach($dados as $key => $value)
                 {
                     $query .= $key . " = " . $value; 
                 }
