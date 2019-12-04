@@ -5,6 +5,7 @@
     require_once ('dao/clsConecta.php');
     require_once ('dao/clsCategoriaDAO.php');
     require_once ('model/clsCategoria.php');
+    
 
 ?>
 
@@ -16,5 +17,24 @@ uma categoria nova pro banco apartir daqui, se funcionar vou criar um formulario
         <input type="text" name="txtNome" placeholder="Nome da Categoria">
         <input type="submit" value="Cadastrar">
         </form>
+        <br>
+        <br>
+        <form name="List" action="">
+        <select>            
+            <option>Selecione... </option>
+        <?php
+            $nome = "";           
+            $idCategoria = 0;
+            $lista = daoCategoria::lista();      
+            foreach ($lista as $cat){
+                $selecionar = "";
+                if( $idCategoria == $cat->getId() ){
+                    $selecionar = " selected ";
+                }?>
+                <option '.$selecionar.' value="'.$cat->getId().'"><?php echo $cat->getNome().'</option>' ?></option>
+                <?php }
+        ?>
+        </form>
+
     </body>
 </html>

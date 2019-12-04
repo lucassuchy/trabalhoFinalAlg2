@@ -9,24 +9,36 @@ class Conecta {
         $db   = "mural";
         
         $link = mysqli_connect($host, $user, $pass, $db);
-        return $link; 
-       /* 
-        if ( $link )
+
+        if ( $link ){
             return $link;
-        else 
+        }else {
             return NULL;
-        */
         }
 
-    public static function executa( $sql ){
-        $link = self::abre();
-        // O problema da conexão ta aqui, acho que ele não ta funcionando na hora de receber
-        // Se eu crio um metodo unico de conexão funciona
-        // Naõ sei pq
-        $comand = mysqli_fetch_assoc($sql);
-        mysqli_query($link, $comand );
+    }
 
+    public function executa( $sql ){
+        $link = self::abre();
+        mysqli_query($link, $sql );
+        self::fecha($link);
     }
     
+    public function fecha($link){
+        //fecha a conexão
+        mysqli_close( $link );
+    }
+
+    public static function consulta( $sql ){
+        $link = self::abre();
+        if( $link ){
+            $result = mysqli_query($link, $sql);
+            self::fecha ($link );
+            return $result;
+        } else {
+            return NULL;
+        }
+    }
+
 }
 ?>

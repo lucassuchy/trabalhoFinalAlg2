@@ -1,7 +1,7 @@
 <?php
-require_once '../model/clsCategoria.php';
-require_once '../dao/clsConecta.php';
-require_once '../dao/clsCategoriaDAO.php';
+
+include_once 'classConecta.php';
+
 
 
 if( isset( $_REQUEST['inserir'] ) ){
