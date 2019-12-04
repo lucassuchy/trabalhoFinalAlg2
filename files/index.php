@@ -3,6 +3,9 @@
 
 /**O que eu preciso fazer
  * Preciso criar uma função que cadastre categorias no banco de dados
+ ** Preciso criar a função que abre o banco
+ ** Preciso criar a função executa o comando pra inserir no banco
+ ** MVP
  * Preciso criar uma função que mostre as categorias cadastradas no banco de dados
  * Preciso criar uma função que cadastre novas entradas no banco de dados mural com os dados puxados  
  * Preciso criar uma função que mostre os dados cadastrados no banco de dados no mural em um html separado
@@ -15,7 +18,8 @@
 
 ?>
 <html>
-    <form> 
-
-
+    <form action="inserir_categoria.php" method="POST">
+        <input type="text" name="nome_categoria" placeholder="Nome da Categoria">
+        <input type="submit" value="Cadastrar">
+    </form>
 </html>
