@@ -12,7 +12,7 @@ class Crud
             if(isset($where))
             {
                 $query .= " where ";
-                foreach($where as $key => $value)
+                foreach($where as $key => $value) 
                 {
                     $query .= $key . " = " . $value; 
                 }

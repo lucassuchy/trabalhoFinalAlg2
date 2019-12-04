@@ -1,14 +1,21 @@
 <?php
-    require_once "config.php";
-?>
 
+
+/**O que eu preciso fazer
+ * Preciso criar uma função que cadastre categorias no banco de dados
+ * Preciso criar uma função que mostre as categorias cadastradas no banco de dados
+ * Preciso criar uma função que cadastre novas entradas no banco de dados mural com os dados puxados  
+ * Preciso criar uma função que mostre os dados cadastrados no banco de dados no mural em um html separado
+ * Preciso criar uma função que mostre as categorias cadastradas e me permita editar elas
+ * preciso criar uma função que mostre as entradas cadastradas nas categorias e me permita editar elas
+ * só
+ * Vou começar pelo form do cadastro de categorias. de novo
+ * Não, vou pegar o backup do git 
+ */
+
+?>
 <html>
-<!--Aqui vai ser a index do trabalho, vou testar transmitir 
-uma categoria nova pro banco apartir daqui, se funcionar vou criar um formulario separado. -->
-    <body>
-        <form method="POST" action="controller/salvaCategorias.php?inserir">
-        <input type="text" name="txtNome" placeholder="Nome da Categoria">
-        <input type="submit" value="Cadastrar">
-        </form>
-    </body>
+    <form> 
+
+
 </html>

@@ -4,13 +4,14 @@
      * anteriormente eu tinha um metodo post, não inclui aqui.
      * Preciso confirmar com o professor isso.
      */
+    
 
-
-    Class daoCategoria extends crud{
+    Class daoCategoria {
         public static function inserir( $categoria){
             $sql = "INSERT INTO categorias(nome) VALUES ". " ( '".$categoria->getNome()."' ) ";
             Conecta::executa($sql);
         }
     
     }
+    
 ?>

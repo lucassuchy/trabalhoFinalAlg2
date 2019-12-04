@@ -6,7 +6,7 @@ include_once '../dao/clsConecta.php';
 if( isset( $_REQUEST['inserir'] ) ){
     $categoria = new Categoria();
     $categoria->setNome( $_POST['txtNome']  );
-    daoCategoria::inserir($categoria);
+    daoCategoria::inserir($categoria, 'mural');
     header("Location: ../index.php");
 }
 
