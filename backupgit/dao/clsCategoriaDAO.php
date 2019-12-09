@@ -17,7 +17,7 @@ require_once 'clsConecta.php';
             if( $result != NULL ){
             while( list($_id, $_nome) = mysqli_fetch_row($result) ){
                 $categoria = new Categoria();
-                $categoria->setId($_id);
+                $categoria->setId($_id); 
                 $categoria->setNome($_nome);
                 $lista->append($categoria);
             }
@@ -25,6 +25,7 @@ require_once 'clsConecta.php';
         return $lista;
 
         }
+
 
 
     }
